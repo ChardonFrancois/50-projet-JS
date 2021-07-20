@@ -1,0 +1,106 @@
+@import url('https://fonts-googleapis.com/css?family=Lato&display=swap');
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+  background-color: #333;
+  color: #222;
+  background-color: #fafafa;
+}
+
+.container {
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 5rem;
+  position: relative;
+}
+
+.above {
+  position: absolute;
+  z-index: 100;
+  font-size: 4rem;
+  top: 5.5rem;
+  left: 4.5rem;
+}
+.ntm {
+  color: #ff7979;
+  position: absolute;
+  top: 5.5rem;
+  left: 7rem;
+  display: inline-block;
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: #fafafa;
+}
+.placement-article {
+  margin-top: 3.5rem;
+}
+
+.container.show-nav {
+  transform: rotate(-20deg);
+}
+
+.circle-container {
+  position: fixed;
+  top: -10rem;
+  left: -10rem;
+}
+
+.circle {
+  background-color: #ff7979;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  position: relative;
+  transition: transform 0.5s linear;
+}
+
+.h1 {
+  font-size: 2.3rem;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 0;
+}
+
+.circle .btn {
+  position: absolute;
+  top: 65%;
+  left: 55%;
+  height: auto;
+  background: transparent;
+  border: 0;
+  font-size: 26px;
+}
+.circle .btn:focus {
+  outline: none;
+}
+
+.circle button#open {
+  left: 60%;
+  background-color: transparent;
+}
+
+.circle button#close {
+  left: 0%;
+  top: 60%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+  background-color: transparent;
+}
+
+.content {
+  max-width: 100%;
+}
